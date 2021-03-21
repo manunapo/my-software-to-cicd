@@ -1,5 +1,7 @@
 # Pull base image 
-FROM tomcat:8-jre8 
+FROM tomcat:latest
+
+MAINTAINER Manuel Napoli
 
 COPY ./webapp.war /usr/local/tomcat/webapps
 
